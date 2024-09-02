@@ -9,12 +9,12 @@ const routes = [
   },
   {
     path: "/projects",
-    element:<Project />,
+    element: <Project />,
   },
   {
-    path:"/contact",
-    element:<Contact />,
-  }
+    path: "/contact",
+    element: <Contact />,
+  },
 ];
 
 export default routes;
