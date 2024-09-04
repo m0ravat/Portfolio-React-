@@ -73,7 +73,6 @@ function Hero() {
         <br />
 
         </>
-
     )
 }
 export default Hero
