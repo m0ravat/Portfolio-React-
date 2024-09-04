@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import code from './Media/code.svg';
 function Hero() {
     const [slideIndex, setSlideIndex] = useState(1);
     const totalSlides = 3; // Total number of slides
@@ -40,16 +40,18 @@ function Hero() {
         <>
         <div className="slideshow-container w-[90%] relative mx-auto">
         {/* Full-width images with number and caption text */}
-        <div className="mySlides hidden fade">
-            <div className="flex justify-between h-96 bg-slate-900 p-16">
-                <p className="text-xl">
-                    Hi, my name is Muhammad Ravat and this is my portfolio. To find out more about me you can click on 
-                </p>
+        <div className="mySlides hidden fade bg-fuchsia-500">
+            <div className="flex justify-between h-96  border-4 border-gray-950 p-4 bg-contain bg-center"style={{ backgroundImage: `url(${code})`}}>
+                <div className=" w-full bg-contain  bg-center" >
+                    <p className="text-xl bg-slate-100 p-4 bg-opacity-80">
+                        Hi, my name is Muhammad Ravat and this is my portfolio. To find out more about me you can click on 
+                    </p>
+                </div>
             </div>
         </div>
 
         <div className="mySlides hidden fade">
-            <div className="flex justify-between h-96 bg-slate-900">
+            <div className="flex justify-between h-96 bg-fuchsia-500 border-4 border-gray-950 p-16">
                 <p className="text-xl  ">
                     Hi, my name is Muhammad Ravat and this is my portfolio. To find out more about me you can click on 
                 </p>
@@ -57,7 +59,7 @@ function Hero() {
         </div>
 
         <div className="mySlides hidden fade">
-            <div className="flex justify-between h-96 bg-slate-900">
+            <div className="flex justify-between h-96 bg-fuchsia-500 border-4 border-gray-950 p-16">
                 <p className="text-xl  ">
                     Hi, my name is Muhammad Ravat and this is my portfolio. To find out more about me you can click on 
                 </p>
