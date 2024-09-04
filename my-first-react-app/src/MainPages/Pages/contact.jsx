@@ -1,5 +1,5 @@
 import Footer from "../Components/footer";
-import TopNav from "../Components/topnav";
+import TopNav from "../Components/TopNav/topnav";
 function Contact(){
     return(
         <div className="mt-4 flex flex-col min-h-screen" >

@@ -1,19 +1,4 @@
-import TopNav from "../Components/topnav"
-import Footer from "../Components/footer"
-import '../main.css'
 import { useState, useEffect } from 'react';
-
-function Home() {
-  return (
-    <div className="mt-4 flex flex-col min-h-screen">
-      <TopNav />
-      <div className="mt-20">
-        <Hero />
-      </div>
-      <Footer />
-    </div>
-  );
-}
 
 function Hero() {
     const [slideIndex, setSlideIndex] = useState(1);
@@ -53,7 +38,7 @@ function Hero() {
     }
     return(
         <>
-        <div className="slideshow-container w-[90rem] relative mx-auto">
+        <div className="slideshow-container w-[90%] relative mx-auto">
         {/* Full-width images with number and caption text */}
         <div className="mySlides hidden fade">
             <div className="flex justify-between h-96 bg-slate-900 p-16">
@@ -81,7 +66,7 @@ function Hero() {
 
         {/* Next and previous buttons */}
         <a className="prev cursor-pointer absolute top-1/2 -mt-[22px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80" onClick={() => plusSlides(-1)}>&#10094;</a>
-        <a className="next cursor-pointer absolute top-1/2 right-1 -mt-[22px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80" onClick={() => plusSlides(1)}>&#10095;</a>
+        <a className="next cursor-pointer absolute top-1/2 right-0 -mt-[22px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80" onClick={() => plusSlides(1)}>&#10095;</a>
         </div>
         <br />
 
@@ -89,4 +74,4 @@ function Hero() {
 
     )
 }
-export default Home
+export default Hero

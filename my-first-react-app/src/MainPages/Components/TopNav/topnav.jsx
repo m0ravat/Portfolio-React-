@@ -1,4 +1,3 @@
-import '../main.css'
 import { Link } from "react-router-dom";
 import MR from "./MR.png";
 import git from './github.svg';
