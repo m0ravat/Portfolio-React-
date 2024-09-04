@@ -1,6 +1,6 @@
-import Contact from "./MainPages/Pages/contact";
+import Contact from "./MainPages/Pages/Contact/contact";
 import Home from "./MainPages/Pages/Home/home";
-import Project from "./MainPages/Pages/projects";
+import Project from "./MainPages/Pages/Projects/projects";
 
 const routes = [
   {
