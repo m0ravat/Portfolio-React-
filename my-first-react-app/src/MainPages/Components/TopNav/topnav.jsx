@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import MR from "./Images/MR1.png";
 import git from './Images/github.svg';
 import vercel from './Images/vercel.svg';
-import './topnav.css'
 import { useState} from 'react';
 
 function TopNav(){
