@@ -1,0 +1,19 @@
+
+#theme-switch img {
+  display: none;
+}
+
+#theme-switch img:first-child {
+  display: block;
+}
+
+/* Dark mode styles */
+.dark #theme-switch img:first-child {
+  display: none;
+}
+
+.dark #theme-switch img:last-child {
+  display: block;
+}
+
+

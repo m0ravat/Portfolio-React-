@@ -1,16 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class', // Enable dark mode via class
   content: [
-      "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
         'mr-image': "url('./Components/MR.png')",
       },
+      colors: {
+        // Add custom colors for dark mode if needed
+        'dark-bg': '#1a1a1a', // Example color
+        'dark-text': '#f5f5f5', // Example color
+      },
     },
   },
   plugins: [],
 }
+
 

@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import MR from "./Images/MR1.png";
-import git from './Images/github.svg';
-import vercel from './Images/vercel.svg';
 import { useState} from 'react';
-
+import Dark from "./dark";
+import './style.css'
 function TopNav(){
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const toggleSidebar = () => {
@@ -13,26 +12,19 @@ function TopNav(){
         <nav className="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-4 z-10 max-[900px]:justify-normal">
           <ul className='float-left'>
             <li>
-              <button onClick={toggleSidebar}>
-                <img src={MR} alt="Logo" className='h-16 mr-4' />
-              </button>
+            <button onClick={toggleSidebar} className="flex items-center gap-1 font-bold">
+                <img src={MR} alt="Logo" className='h-16 mr-2' /> Muhammad Ravat
+            </button>
             </li>
           </ul>
-          <ul className="flex space-x-[30%] text-2xl max-[650px]:hidden">
+          <ul className="flex space-x-[30%] text-2xl max-[650px]:hidden dark:text-pink-500">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
           <ul className="flex space-x-[10%] max-[900px]:absolute right-0 pr-4">
             <li>
-              <Link to="https://github.com/m0ravat" target="_blank" rel="noopener noreferrer">
-                <img src={git} alt="GitHub" className="h-20" />
-              </Link>
-            </li>
-            <li>
-              <Link to="https://vercel.com/m0ravats-projects" target="_blank" rel="noopener noreferrer" >
-                <img src={vercel} alt="Vercel" className="h-20 " />
-              </Link>
+              <Dark />
             </li>
           </ul>
           
