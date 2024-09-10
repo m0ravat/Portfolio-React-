@@ -1,5 +1,5 @@
 import code from './Media/code.svg';
-import { HeroSlides } from '../../Components/SlideShow/slides';
+import { HeroSlides } from './Slides';
 function Hero() {
     const heroSlides = [
       { img: code, text: (
