@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 export function ProjectSlides({ slides }) {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -28,34 +27,31 @@ export function ProjectSlides({ slides }) {
 
   return (
     <>
-      <h1 className='text-2xl border-b-2 border-black mb-4'>Main Projects: </h1>
+      <h1 className='text-2xl border-b-2 border-black mb-4'>Main Projects (Click on the image to see more information): </h1>
       {slides.map(({ img, title, desc, link }, index) => (
         <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-600`}>
-          <div
-            className={`flex justify-between border-4 border-gray-950 bg-cover bg-center md:h-96 h-64 sm:h-80   ${clickedImageIndex === index ? 'opacity-90' : 'opacity-100'}`}
+          
+          <div className={`flex justify-between border-4 border-gray-950 bg-cover bg-center md:h-96 h-64 sm:h-80   ${clickedImageIndex === index ? 'opacity-90' : 'opacity-100'}`}
             style={{
               backgroundImage: `url(${img})`,
               backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
             }}
-            onClick={() => displayText(index)} // Show/hide text and reduce opacity on click
-          >
+            onClick={() => displayText(index)}>
             <p className={`text-2xl p-10 text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
-              {title} <br />
-              {desc} <Link to={link}>View</Link>
+              <h1 className='border-b-2 border-white'>{title}</h1> <br />
+              {desc} <a href={link} className='text-green-400'>here.</a>
             </p>
           </div>
         </div>
       ))}
-      <a
-        className="prev cursor-pointer absolute top-1/2 -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80"
+      <a className="prev cursor-pointer absolute top-1/2 -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80"
         onClick={() => plusSlides(-1)}
       >
         &#10094;
       </a>
-      <a
-        className="next cursor-pointer absolute top-1/2 right-0 -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
+      <a className="next cursor-pointer absolute top-1/2 right-0 -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
         onClick={() => plusSlides(1)}
       >
         &#10095;

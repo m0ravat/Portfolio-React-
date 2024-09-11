@@ -8,11 +8,14 @@ import web from './Media/webImg.jpeg'
 import { ProjectSlides } from "./Slides"
 function Project(){
     const highlights = [
-        {img:notes, title:"MyNotesToDo App", desc:"This is my app where you can create projects with tasks and colour coded dates to keep up with which need to be done",
-            link:"/NotesApp", index:0
+        {img:notes, title:"MyNotesToDo App", desc:"This is my app where you can create projects with tasks and colour coded dates to keep up with which need to be done. You can see the details of it ",
+            link:"#notes", index:0
         },
-        {img:port, title:"MyNotesToDo App", desc:"This is my app where you can create projects with tasks and colour coded dates to keep up with which need to be done",
-            link:"/NotesApp", index:0
+        {img:port, title:"Personal Portfolio", desc:"This is my personal portfolio, which displays all relevant information about me. You can see more information by clicking ",
+            link:"#port", index:1
+        },
+        {img:java, title:"Module Enrolment System", desc:"This is my first large scale project in java, allowing a student to enrol on a class of his choosing. For more information click ",
+            link:"#port", index:2
         },
     ]
     return(
