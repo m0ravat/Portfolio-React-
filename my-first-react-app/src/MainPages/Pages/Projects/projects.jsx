@@ -15,7 +15,7 @@ function Project(){
             link:"#port", index:1
         },
         {img:java, title:"Module Enrolment System", desc:"This is my first large scale project in java, allowing a student to enrol on a class of his choosing. For more information click ",
-            link:"#port", index:2
+            link:"#module", index:2
         },
     ]
     return(
