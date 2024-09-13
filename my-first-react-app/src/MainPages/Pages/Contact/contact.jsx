@@ -14,148 +14,37 @@ function Contact(){
             </div>
         ),index:0},
         {img: background, form:(
-            <>
-            <form
-                action="mailto:moravat763@gmail.com"
-                method="post"
-                encType="text/plain"
-                className="flex flex-wrap text-standard"
-            >
-                <fieldset className="form one p-2 mb-12 mx-auto   bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)]  float-left">
-                <legend className="bg-zinc-100 text-blueviolet text-large p-1">
-                    Positive Feedback
-                </legend>
+            <form action="mailto:moravat763@gmail.com" method="post" encType="text/plain" className="flex flex-wrap text-standard"> 
+            <fieldset className="form one p-2 mb-12 mx-auto bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)] float-left"> 
+                <legend className="bg-zinc-100 text-blueviolet text-large p-1">Positive Feedback</legend> 
                 
-                <label htmlFor="name1" className="my-2 mr-2">
-                    Name:
-                </label>
-                <input
-                    type="text"
-                    id="name1"
-                    placeholder="Your name"
-                    required
-                    minLength="3"
-                    className="max-w-[230px] my-2 p-1"
-                />
-                <br /> <br />
-
-                <label htmlFor="email1" className="my-2 mr-2">
-                    Email address:
-                </label>
-                <input
-                    type="email"
-                    id="email1"
-                    name="email"
-                    placeholder="youremail@email.com"
-                    className="max-w-[230px] my-2 p-1"
-                />
-                <br /> <br />
-
-                Are you a... <br />
-                <input
-                    type="radio"
-                    name="delivery"
-                    id="am1"
-                    value="am"
-                    className="my-2"
-                />
-                <label htmlFor="am1" className="my-2">
-                    Student
-                </label>
-                <br />
-                <input
-                    type="radio"
-                    name="delivery"
-                    id="pm1"
-                    value="pm"
-                    className="my-2 p-1"
-                />
-                <label htmlFor="pm1" className="my-2">
-                    Employer
-                </label>
-                <br />
-                <input
-                    type="radio"
-                    name="delivery"
-                    id="eve1"
-                    value="eve"
-                    className="my-2"
-                />
-                <label htmlFor="eve1" className="my-2">
-                    Other
-                </label>
-                <br /> <br />
-
-                <label htmlFor="volume1" className="my-2 mr-2">
-                    Rating for website:
-                </label>
-                <input
-                    type="range"
-                    id="volume1"
-                    name="volume"
-                    min="0"
-                    max="10"
-                    step="1"
-                    defaultValue="3"
-                    className="max-w-[230px] my-2 "
-                />
-                <br /> <br />
-
-                <label htmlFor="speed1" className="my-2 mr-2">
-                    Speed:
-                </label>
-                <input
-                    type="range"
-                    id="speed1"
-                    name="speed"
-                    min="0"
-                    max="10"
-                    step="1"
-                    defaultValue="3"
-                    className="max-w-[230px] my-2"
-                />
-                <br /> <br />
-
-                <label htmlFor="Quality1" className="my-2 mr-2">
-                    Quality of information available:
-                </label>
-                <input
-                    type="range"
-                    id="Quality1"
-                    name="Quality"
-                    min="0"
-                    max="10"
-                    step="1"
-                    defaultValue="3"
-                    className="max-w-[230px] my-2"
-                />
-                <br /> <br />
-
-                <label htmlFor="extraP1" className="my-2 ">
-                    Extra Comments:
-                </label> <br />
-                <textarea
-                    name="extraP"
-                    id="extraP1"
-                    cols="35"
-                    rows="7"
-                    className="my-2 bg-green-600 text-white p-2"
-                ></textarea>
-                <br />
-
-                <input
-                    type="submit"
-                    value="Submit"
-                    className="buttons bg-orange-950 text-emerald-400 text-lg mr-4 p-2"
-                />
-                <input
-                    type="reset"
-                    value="Reset"
-                    className="buttons bg-orange-950 text-emerald-400 text-lg p-2"
-                />
-                </fieldset>
+                <label htmlFor="name1" className="my-2 mr-2">Name:</label> 
+                <input type="text" id="name1" placeholder="Your name" required minLength="3" className="max-w-[230px] my-2 p-1"/><br /><br /> 
+                
+                <label htmlFor="email1" className="my-2 mr-2">Email address:</label> 
+                <input type="email" id="email1" name="email" placeholder="youremail@email.com" className="max-w-[230px] my-2 p-1"/><br /><br /> 
+                
+                Are you a... <br /> 
+                <input type="radio" name="delivery" id="am1" value="am" className="my-2"/><label htmlFor="am1" className="my-2">Student</label><br /> 
+                <input type="radio" name="delivery" id="pm1" value="pm" className="my-2 p-1"/><label htmlFor="pm1" className="my-2">Employer</label><br /> 
+                <input type="radio" name="delivery" id="eve1" value="eve" className="my-2"/><label htmlFor="eve1" className="my-2">Other</label><br /><br /> 
+                
+                <label htmlFor="volume1" className="my-2 mr-2">Rating for website:</label> 
+                <input type="range" id="volume1" name="volume" min="0" max="10" step="1" defaultValue="3" className="max-w-[230px] my-2"/><br /><br /> 
+                
+                <label htmlFor="speed1" className="my-2 mr-2">Speed:</label> 
+                <input type="range" id="speed1" name="speed" min="0" max="10" step="1" defaultValue="3" className="max-w-[230px] my-2"/><br /><br /> 
+                
+                <label htmlFor="Quality1" className="my-2 mr-2">Quality of information available:</label> 
+                <input type="range" id="Quality1" name="Quality" min="0" max="10" step="1" defaultValue="3" className="max-w-[230px] my-2"/><br /><br /> 
+                
+                <label htmlFor="extraP1" className="my-2">Extra Comments:</label><br /> 
+                <textarea name="extraP" id="extraP1" cols="35" rows="7" className="my-2 bg-green-600 text-white p-2"></textarea><br /> 
+                
+                <input type="submit" value="Submit" className="buttons bg-orange-950 text-emerald-400 text-lg mr-4 p-2"/> 
+                <input type="reset" value="Reset" className="buttons bg-orange-950 text-emerald-400 text-lg p-2"/> 
+            </fieldset>
             </form>
-            </>
         ),index:1},
         {img: background, form:(
             <>
