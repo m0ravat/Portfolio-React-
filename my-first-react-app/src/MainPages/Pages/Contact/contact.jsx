@@ -47,152 +47,29 @@ function Contact(){
             </form>
         ),index:1},
         {img: background, form:(
-            <>
-            <form
-                action="mailto:moravat763@gmail.com"
-                method="post"
-                encType="text/plain"
-                id="ff"
-                className="flex flex-wrap text-standard"
-            >
-                <fieldset className="form two p-2 mb-12 mx-auto bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)] float-right">
-                <legend className="bg-zinc-100 text-blueviolet text-large p-1">
-                    Improvements
-                </legend>
-
-                <label htmlFor="name" className="my-2 mr-2">
-                    Name:
-                </label>
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Your name"
-                    required
-                    minLength="3"
-                    className="max-w-[230px] my-2 p-1"
-                />
-                <br />
-
-                <label htmlFor="email" className="my-2 mr-2 ">
-                    Email address:
-                </label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="youremail@email.com"
-                    className="max-w-[230px] my-2 p-1"
-                />
-                <br />
-
-                Are you a... <br />
-                <input
-                    type="radio"
-                    name="delivery"
-                    id="am"
-                    value="am"
-                    className="my-2"
-                />
-                <label htmlFor="am" className="my-2 ml-2">
-                    Student
-                </label>
-                <br />
-                <input
-                    type="radio"
-                    name="delivery"
-                    id="pm"
-                    value="pm"
-                    className="my-2 p-1"
-                />
-                <label htmlFor="pm" className="my-2 ml-2">
-                    Employer
-                </label>
-                <br />
-                <input
-                    type="radio"
-                    name="delivery"
-                    id="eve"
-                    value="eve"
-                    className="my-2"
-                />
-                <label htmlFor="eve" className="my-2 ml-2">
-                    Other
-                </label>
-                <br /> <br />
-
-                Tick which pages you think need improvement: <br />
-                <input
-                    type="checkbox"
-                    name="pages"
-                    id="Home"
-                    value="Home"
-                    defaultChecked
-                    className="my-2"
-                />
-                <label htmlFor="Home" className="my-2 ml-2">
-                    Home
-                </label>
-                <br />
-                <input
-                    type="checkbox"
-                    name="pages"
-                    id="About_Me"
-                    value="About_Me"
-                    className="my-2"
-                />
-                <label htmlFor="About_Me" className="my-2 ml-2">
-                    About Me
-                </label>
-                <br />
-                <input
-                    type="checkbox"
-                    name="pages"
-                    id="Project"
-                    value="Project"
-                    className="my-2"
-                />
-                <label htmlFor="Project" className="my-2 ml-2">
-                    Project
-                </label>
-                <br />
-                <input
-                    type="checkbox"
-                    name="pages"
-                    id="Contact"
-                    value="Contact me"
-                    className="my-2"
-                />
-                <label htmlFor="Contact" className="my-2 ml-2">
-                    Contact me
-                </label>
-                <br /> <br />
-
-                <label htmlFor="extraP" className="my-2 ">
-                    Extra Comments:
-                </label>
-                <br />
-                <textarea
-                    name="extraP"
-                    id="extraP"
-                    cols="35"
-                    rows="7"
-                    className="my-2 bg-green-600 text-white p-2"
-                ></textarea>
-                <br />
-
-                <input
-                    type="submit"
-                    value="Submit"
-                    className="buttons bg-orange-950 text-emerald-400 text-lg mr-4 p-2"
-                />
-                <input
-                    type="reset"
-                    value="Reset"
-                    className="buttons bg-orange-950 text-emerald-400 text-lg p-2"
-                />
-                </fieldset>
+            <form action="mailto:moravat763@gmail.com" method="post" encType="text/plain" id="ff" className="flex flex-wrap text-standard"> 
+            <fieldset className="form two p-2 mb-12 mx-auto bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)] float-right"> 
+                <legend className="bg-zinc-100 text-blueviolet text-large p-1">Improvements</legend> 
+                <label htmlFor="name" className="my-2 mr-2">Name:</label> 
+                <input type="text" id="name" placeholder="Your name" required minLength="3" className="max-w-[230px] my-2 p-1"/><br /> 
+                <label htmlFor="email" className="my-2 mr-2">Email address:</label> 
+                <input type="email" id="email" name="email" placeholder="youremail@email.com" className="max-w-[230px] my-2 p-1"/><br /> 
+                Are you a... <br /> 
+                <input type="radio" name="delivery" id="am" value="am" className="my-2"/><label htmlFor="am" className="my-2 ml-2">Student</label><br /> 
+                <input type="radio" name="delivery" id="pm" value="pm" className="my-2 p-1"/><label htmlFor="pm" className="my-2 ml-2">Employer</label><br /> 
+                <input type="radio" name="delivery" id="eve" value="eve" className="my-2"/><label htmlFor="eve" className="my-2 ml-2">Other</label><br /><br /> 
+                Tick which pages you think need improvement: <br /> 
+                <input type="checkbox" name="pages" id="Home" value="Home" defaultChecked className="my-2"/><label htmlFor="Home" className="my-2 ml-2">Home</label><br /> 
+                <input type="checkbox" name="pages" id="About_Me" value="About_Me" className="my-2"/><label htmlFor="About_Me" className="my-2 ml-2">About Me</label><br /> 
+                <input type="checkbox" name="pages" id="Project" value="Project" className="my-2"/><label htmlFor="Project" className="my-2 ml-2">Project</label><br /> 
+                <input type="checkbox" name="pages" id="Contact" value="Contact me" className="my-2"/><label htmlFor="Contact" className="my-2 ml-2">Contact me</label><br /><br /> 
+                <label htmlFor="extraP" className="my-2">Extra Comments:</label><br /> 
+                <textarea name="extraP" id="extraP" cols="35" rows="7" className="my-2 bg-green-600 text-white p-2"></textarea><br /> 
+                <input type="submit" value="Submit" className="buttons bg-orange-950 text-emerald-400 text-lg mr-4 p-2"/> 
+                <input type="reset" value="Reset" className="buttons bg-orange-950 text-emerald-400 text-lg p-2"/> 
+            </fieldset> 
             </form>
-            </>
+
         ),index:2}
     ]
     return(
