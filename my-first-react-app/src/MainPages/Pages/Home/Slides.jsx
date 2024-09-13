@@ -23,7 +23,7 @@ export function HeroSlides({ slides }){
         {slides.map(({ img, text, index }) => (
             <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-500`}>
               <div className="flex justify-between h-max border-4 border-gray-950 px-10 bg-contain bg-center max-sm:px-0" style={{ backgroundImage: `url(${img})` }}>
-                <p className="text-2xl bg-slate-100 p-4 bg-opacity-80 w-max h-max mx-auto ">
+                <p className="text-standard bg-slate-100 p-4 bg-opacity-80 w-max h-max mx-auto ">
                     {text}
                 </p>
               </div>

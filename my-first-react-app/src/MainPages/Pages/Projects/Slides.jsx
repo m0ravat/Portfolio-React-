@@ -27,7 +27,7 @@ export function ProjectSlides({ slides }) {
 
   return (
     <>
-      <h1 className='text-2xl border-b-2 border-black mb-4'>Main Projects (Click on the image to see more information): </h1>
+      <h1 className='text-large font-bold border-b-2 border-black mb-4 '>Main Projects (Click on the image to see more information): </h1>
       {slides.map(({ img, title, desc, link }, index) => (
         <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-600`}>
           
@@ -39,10 +39,10 @@ export function ProjectSlides({ slides }) {
               backgroundRepeat: 'no-repeat',
             }}
             onClick={() => displayText(index)}>
-            <p className={`text-2xl p-10 text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
-              <h1 className='border-b-2 border-white'>{title}</h1> <br />
-              {desc} <a href={link} className='text-green-400'>here.</a>
-            </p>
+            <div className={`text-large p-10 text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
+              <h1 className='border-b-2 border-white text-large mb-4'>{title}</h1>
+              <p>{desc} <a href={link} className='text-green-400'>here.</a></p>
+            </div>
           </div>
         </div>
       ))}

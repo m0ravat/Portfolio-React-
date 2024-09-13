@@ -5,13 +5,13 @@ import { ContactSlides } from "./Slides"
 function Contact(){
     const ContactElements = [
         {img: background, form:(
-            <>
-                <h1 className='border-2 border-b-black mb-2'>Contact Details</h1>
+            <div className="text-standard p-2">
+                <h1 className='border-2 border-b-black mb-2 text-large'>Contact Details</h1>
                 If you would like to get in touch with me personally you can do so through: <br />
                 Phone : +44 (0)7769004379 <br />
                 Email : moravat763@gmail.com <br />
                 If you would like to leave feedback for the website you can do so on the next slides.  
-            </>
+            </div>
         ),index:0},
         {img: background, form:(
             <>
@@ -19,10 +19,10 @@ function Contact(){
                 action="mailto:moravat763@gmail.com"
                 method="post"
                 encType="text/plain"
-                className="flex flex-wrap"
+                className="flex flex-wrap text-standard"
             >
                 <fieldset className="form one p-2 mb-12 mx-auto   bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)]  float-left">
-                <legend className="bg-zinc-100 text-blueviolet text-[calc(15px+0.390625vw)] p-1">
+                <legend className="bg-zinc-100 text-blueviolet text-large p-1">
                     Positive Feedback
                 </legend>
                 
@@ -164,10 +164,10 @@ function Contact(){
                 method="post"
                 encType="text/plain"
                 id="ff"
-                className="flex flex-wrap"
+                className="flex flex-wrap text-standard"
             >
                 <fieldset className="form two p-2 mb-12 mx-auto bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)] float-right">
-                <legend className="bg-zinc-100 text-blueviolet text-[calc(15px+0.390625vw)] p-1">
+                <legend className="bg-zinc-100 text-blueviolet text-large p-1">
                     Improvements
                 </legend>
 
