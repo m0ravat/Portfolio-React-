@@ -39,8 +39,8 @@ function Dark() {
         onClick={toggleDarkMode}
         className="h-12 w-12 p-0 rounded-full flex justify-center items-center fixed top-5 right-5 bg-black"
         >
-        <img src={dark} alt="Dark mode icon" />
         <img src={light} alt="Light mode icon" />
+        <img src={dark} alt="Dark mode icon" />
         </button>
 
     );
