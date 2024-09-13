@@ -24,7 +24,7 @@ function Footer(){
                 </ul>
             </div>
             <div className="contact w-max p-2 text-center text-standard bg-gray-100 rounded-lg shadow-md">
-                <p className="font-bold mb-2">Contact Details
+                <p className="font-medium mb-2">Contact Details <br />
                     Number: <a href="tel:+447769004379" className="hover:text-blue-500">+44 (0)7769004379</a> <br />
                     Email: <a href="mailto:moravat763@gmail.com" className="hover:text-blue-500">moravat763@gmail.com</a>
                 </p>
