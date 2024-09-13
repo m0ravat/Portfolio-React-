@@ -137,7 +137,7 @@ function Contact(){
                 <textarea
                     name="extraP"
                     id="extraP1"
-                    cols="40"
+                    cols="35"
                     rows="7"
                     className="my-2 bg-green-600 text-white p-2"
                 ></textarea>
@@ -285,7 +285,7 @@ function Contact(){
                 <textarea
                     name="extraP"
                     id="extraP"
-                    cols="40"
+                    cols="35"
                     rows="7"
                     className="my-2 bg-green-600 text-white p-2"
                 ></textarea>
@@ -310,7 +310,7 @@ function Contact(){
         <div className="mt-4 flex flex-col min-h-screen" >
             <TopNav />
             <div className="p-8 mt-20">
-                <div className="slideshow-container w-[90%] relative mx-auto">
+                <div className="slideshow-container w-[90%] min-w-72 relative mx-auto">
                     <ContactSlides slides = {ContactElements}/>
                 </div>
             </div>

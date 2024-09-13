@@ -22,10 +22,10 @@ export function ContactSlides({ slides }){
         <>
         {slides.map(({ img, form, index }) => (
             <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-500`}>
-              <div className="flex justify-between h-fit border-4 border-gray-950 p-4 px-10 bg-contain bg-center " style={{ backgroundImage: `url(${img})` }}>
-                <p className="text-2xl bg-slate-100 p-4 bg-opacity-90 w-max h-max mx-auto">
+              <div className="flex justify-between h-fit border-4 border-gray-950  bg-contain bg-center " style={{ backgroundImage: `url(${img})` }}>
+                <div className="text-2xl bg-slate-100 p-2 bg-opacity-90  mx-auto">
                     {form}
-                </p>
+                </div>
               </div>
             </div>
         ))}
