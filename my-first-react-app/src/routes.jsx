@@ -8,11 +8,11 @@ const routes = [
     element: <Home />,
   },
   {
-    path: "/projects",
+    path: "projects",
     element: <Project />,
   },
   {
-    path: "/contact",
+    path: "contact",
     element: <Contact />,
   },
 ];
