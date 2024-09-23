@@ -30,8 +30,8 @@ function TopNav(){
           <ul className="space-y-8 text-3xl">
             <img src={MR} alt="Logo" className="bg-slate-600 rounded-full" />
             <li><Link to="/" onClick={toggleSidebar}>Home</Link></li>
-            <li><Link to="/projects" onClick={toggleSidebar}>Projects</Link></li>
-            <li><Link to="/contact" onClick={toggleSidebar}>Contact</Link></li>
+            <li><Link to="projects" onClick={toggleSidebar}>Projects</Link></li>
+            <li><Link to="contact" onClick={toggleSidebar}>Contact</Link></li>
             <li><Link to ="https://github.com/m0ravat"target="_blank" rel="noopener noreferrer">GitHub</Link></li>
             <li><Link to ="https://vercel.com/m0ravats-projects"target="_blank" rel="noopener noreferrer">My Websites</Link></li>
           </ul>
