@@ -23,7 +23,7 @@ function Project(){
         {title:"Portfolio", desc:"A website designed to showcase my web design and web development skills, while progressively using skills I have learnt through the Odin Project, from vanilla HTML/CSS and JS to using tools like Webpack, Vercel, React and TailwindCSS.",
             webLink:"https://www.moravat.me/", gitLink:"https://github.com/m0ravat/webPortfolio", img:python, id:"port"
         },
-        {title:"MyNotesToDo Application", desc:"This was a website I created that allows users to create tasks for projects and date them to keep up with them, seperating ongoing ones to finished tasks. It stores all data in localStorage, and implements basic CRUD techniques. It also has a form for user input and was the first program which showcases my data management skills.",
+        {title:"ToDo App", desc:"This was a website I created that allows users to create tasks for projects and date them to keep up with them, seperating ongoing ones to finished tasks. It stores all data in localStorage, and implements basic CRUD techniques. It also has a form for user input and was the first program which showcases my data management skills.",
             webLink:"https://www.mynotestodo.com/",gitLink:"https://github.com/m0ravat/ToDoListApp",img:web, id:"notes"
         },
         {title:"Weather App", desc:"This was a basic weather app I made to demonstrate my use of API's. I used the visual crossing API to get the weather when the address is inputted, and I used the GIPHY API to generate a gif upon the pressing of a button. I also tailored it to mobile resolution by centering it for bigger resolutions.",

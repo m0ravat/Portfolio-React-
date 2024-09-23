@@ -31,7 +31,7 @@ export function ProjectSlides({ slides }) {
       {slides.map(({ img, title, desc, link }, index) => (
         <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-600`}>
           
-          <div className={`flex justify-between border-4 border-gray-950 bg-cover bg-center md:h-96 h-64 sm:h-80   ${clickedImageIndex === index ? 'opacity-90' : 'opacity-100'}`}
+          <div className={`flex justify-between border-4 border-gray-950 bg-cover bg-center md:h-96 h-80 sm:h-80   ${clickedImageIndex === index ? 'opacity-90' : 'opacity-100'}`}
             style={{
               backgroundImage: `url(${img})`,
               backgroundSize: 'contain',
@@ -39,9 +39,9 @@ export function ProjectSlides({ slides }) {
               backgroundRepeat: 'no-repeat',
             }}
             onClick={() => displayText(index)}>
-            <div className={`text-large p-10 text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
-              <h1 className='border-b-2 border-white text-large mb-4'>{title}</h1>
-              <p>{desc} <a href={link} className='text-green-400'>here.</a></p>
+            <div className={`text-standard p-10 text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
+              <h1 className='border-b-2 border-white text-standard mb-4'>{title}</h1>
+              <p className='text-standard'>{desc} <a href={link} className='text-green-400'>here.</a></p>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ export function ProjectSlides({ slides }) {
       >
         &#10094;
       </a>
-      <a className="next cursor-pointer absolute top-1/2 right-0 -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
+      <a className="next cursor-pointer absolute top-1/2 right-0  -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
         onClick={() => plusSlides(1)}
       >
         &#10095;
