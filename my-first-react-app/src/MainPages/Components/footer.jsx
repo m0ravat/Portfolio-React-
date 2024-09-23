@@ -19,8 +19,8 @@ function Footer(){
                 <h2 className="mb-2 text-standard font-semibold text-gray-900 uppercase dark:text-white">Main Pages</h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium text-standard">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="projects">Projects</Link></li>
-                    <li><Link to="contact">Contact</Link></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
             <div className="contact w-max p-2 text-center text-standard bg-gray-100 rounded-lg shadow-md">
