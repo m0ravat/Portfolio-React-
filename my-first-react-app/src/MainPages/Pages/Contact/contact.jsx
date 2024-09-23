@@ -14,7 +14,7 @@ function Contact(){
             </div>
         ),index:0},
         {img: background, form:(
-            <form action="mailto:moravat763@gmail.com" method="post" encType="text/plain" className="flex flex-wrap text-standard"> 
+            <form action="mailto:moravat763@gmail.com" method="post" encType="text/plain" className="flex flex-wrap text-standard overflow-hidden"> 
             <fieldset className="form one p-2 mb-12 mx-auto bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)] float-left"> 
                 <legend className="bg-zinc-100 text-blueviolet text-large p-1">Positive Feedback</legend> 
                 
@@ -39,7 +39,7 @@ function Contact(){
                 <input type="range" id="Quality1" name="Quality" min="0" max="10" step="1" defaultValue="3" className="max-w-[230px] my-2"/><br /><br /> 
                 
                 <label htmlFor="extraP1" className="my-2">Extra Comments:</label><br /> 
-                <textarea name="extraP" id="extraP1" cols="35" rows="7" className="my-2 bg-green-600 text-white p-2"></textarea><br /> 
+                <textarea name="extraP" id="extraP1" rows="7" className="my-2 bg-green-600 text-white p-2 w-[98%]"></textarea><br /> 
                 
                 <input type="submit" value="Submit" className="buttons bg-orange-950 text-emerald-400 text-lg mr-4 p-2"/> 
                 <input type="reset" value="Reset" className="buttons bg-orange-950 text-emerald-400 text-lg p-2"/> 
@@ -47,7 +47,7 @@ function Contact(){
             </form>
         ),index:1},
         {img: background, form:(
-            <form action="mailto:moravat763@gmail.com" method="post" encType="text/plain" id="ff" className="flex flex-wrap text-standard"> 
+            <form action="mailto:moravat763@gmail.com" method="post" encType="text/plain" id="ff" className="flex flex-wrap text-standard overflow-hidden"> 
             <fieldset className="form two p-2 mb-12 mx-auto bg-[#4bc497] text-[rgb(118,10,135)] font-bold text-[calc(10px+0.390625vw)] float-right"> 
                 <legend className="bg-zinc-100 text-blueviolet text-large p-1">Improvements</legend> 
                 <label htmlFor="name" className="my-2 mr-2">Name:</label> 
@@ -64,7 +64,7 @@ function Contact(){
                 <input type="checkbox" name="pages" id="Project" value="Project" className="my-2"/><label htmlFor="Project" className="my-2 ml-2">Project</label><br /> 
                 <input type="checkbox" name="pages" id="Contact" value="Contact me" className="my-2"/><label htmlFor="Contact" className="my-2 ml-2">Contact me</label><br /><br /> 
                 <label htmlFor="extraP" className="my-2">Extra Comments:</label><br /> 
-                <textarea name="extraP" id="extraP" cols="35" rows="7" className="my-2 bg-green-600 text-white p-2"></textarea><br /> 
+                <textarea name="extraP" id="extraP" rows="7" className="my-2 bg-green-600 text-white p-2 w-[98%]"></textarea><br /> 
                 <input type="submit" value="Submit" className="buttons bg-orange-950 text-emerald-400 text-lg mr-4 p-2"/> 
                 <input type="reset" value="Reset" className="buttons bg-orange-950 text-emerald-400 text-lg p-2"/> 
             </fieldset> 
