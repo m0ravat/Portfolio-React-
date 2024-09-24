@@ -4,7 +4,6 @@ import java from './Media/javaImg.jpeg'
 import notes from './Media/Website_Images/Mynotes.png'
 import port from './Media/Website_Images/Portfolio.png'
 import trio from './Media/Website_Images/mix.png'
-import web from './Media/webImg.jpeg'
 import module from './Media/Project_Images/Module.png'
 import react from  './Media/Website_Images/React.png'
 import api from './Media/Website_Images/API.png'
@@ -39,7 +38,7 @@ function Project(){
     ]
     const projects = [
         {title:"Module Enrolment", desc:"A program designed to allow a student to enrol on one of multiple classes, and choosing a seat. This demonstrated my OOP skills by using a Module class, a Seat class and a Person class. It was designed on IntelliJ on Java and was inspired by a similar plane booking system I did at university.",
-            gitLink:"", img:java, id:"module"
+            gitLink:"https://github.com/m0ravat/Enrol", img:java, id:"module"
         },
     ]
     return(
