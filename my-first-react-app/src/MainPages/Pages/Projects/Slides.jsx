@@ -39,7 +39,7 @@ export function ProjectSlides({ slides }) {
               backgroundRepeat: 'no-repeat',
             }}
             onClick={() => displayText(index)}>
-            <div className={`text-standard p-10 text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
+            <div className={`text-standard p-10 overflow-auto text-white bg-black ${visibleTextIndex === index ? 'block' : 'hidden'}`}>
               <h1 className='border-b-2 border-white text-standard mb-4'>{title}</h1>
               <p className='text-standard'>{desc} <a href={link} className='text-green-400'>here.</a></p>
             </div>
