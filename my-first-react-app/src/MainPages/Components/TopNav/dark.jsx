@@ -37,7 +37,7 @@ function Dark() {
         <button
         id="theme-switch"
         onClick={toggleDarkMode}
-        className="h-12 w-12 p-0 rounded-full flex justify-center items-center fixed top-5 right-5 bg-black"
+        className="h-12 w-12 p-0 rounded-full flex justify-center items-center fixed top-5 right-5 bg-black border-2 border-white"
         >
         <img src={light} alt="Light mode icon" />
         <img src={dark} alt="Dark mode icon" />

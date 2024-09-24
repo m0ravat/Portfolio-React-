@@ -9,11 +9,11 @@ function TopNav(){
       setIsSidebarOpen(!isSidebarOpen);
   }
   return (
-    <nav className="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-4 z-10 max-[900px]:justify-normal">
+    <nav className="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-4 z-10 max-[900px]:justify-normal bg-white text-black dark:bg-black text-white">
       <ul className='float-left'>
-        <li><button onClick={toggleSidebar} className="flex items-center gap-1 font-bold text-standard"><img src={MR} alt="Logo" className='h-16 ' /> Muhammad Ravat</button></li>
+        <li><button onClick={toggleSidebar} className="flex dark:text-white items-center gap-1 font-bold text-standard"><img src={MR} alt="Logo" className='h-16 dark:bg-white text-white ' /> Muhammad Ravat</button></li>
       </ul>
-      <ul className="flex space-x-[30%] text-standard max-[650px]:hidden dark:text-pink-500 ml-20">
+      <ul className="flex space-x-[30%] text-standard max-[650px]:hidden dark:text-white ml-20">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/contact">Contact</Link></li>
