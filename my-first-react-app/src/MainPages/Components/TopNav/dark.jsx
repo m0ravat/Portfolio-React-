@@ -5,12 +5,14 @@ function Dark() {
     const [darkmode, setDarkmode] = useState(localStorage.getItem('darkmode') || 'inactive');
 
     const enableDarkmode = () => {
+        document.body.classList.add('dark');
         document.documentElement.classList.add('dark'); // Add 'dark' class to the html element
         localStorage.setItem('darkmode', 'active');
         setDarkmode('active');
     };
 
     const disableDarkmode = () => {
+        document.body.classList.remove('dark');
         document.documentElement.classList.remove('dark'); // Remove 'dark' class from the html element
         localStorage.setItem('darkmode', 'inactive');
         setDarkmode('inactive');
