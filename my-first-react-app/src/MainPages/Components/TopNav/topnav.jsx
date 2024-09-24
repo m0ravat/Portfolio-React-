@@ -11,7 +11,7 @@ function TopNav(){
   return (
     <nav className="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-4 z-10 max-[900px]:justify-normal bg-white  dark:bg-black">
       <ul className='float-left'>
-        <li><button onClick={toggleSidebar} className="flex text-black dark:text-white items-center gap-1 font-bold text-standard"><img src={MR} alt="Logo" className='h-16 dark:bg-white text-white ' /> Muhammad Ravat</button></li>
+        <li><button onClick={toggleSidebar} className="flex text-black dark:text-white items-center gap-1 font-bold text-standard round"><img src={MR} alt="Logo" className='h-16 dark:bg-white text-white rounded-2xl  p-1 ' /> Muhammad Ravat</button></li>
       </ul>
       <ul className="flex space-x-[30%] text-standard max-[650px]:hidden text-black dark:text-white ml-20">
         <li><Link to="/">Home</Link></li>
