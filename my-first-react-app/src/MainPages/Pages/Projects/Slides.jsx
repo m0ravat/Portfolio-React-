@@ -27,7 +27,7 @@ export function ProjectSlides({ slides }) {
 
   return (
     <>
-      <h1 className='text-large font-bold border-b-2 border-black mb-4 '>Main Projects (Click on the image to see more information): </h1>
+      <h1 className='text-large font-bold border-b-2 border-black mb-4 dark:border-white text-black dark:text-white '>Main Projects (Click on the image to see more information): </h1>
       {slides.map(({ img, title, desc, link }, index) => (
         <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-600`}>
           
