@@ -6,7 +6,7 @@ function Contact(){
     const ContactElements = [
         {img: background, form:(
             <div className="text-standard p-2">
-                <h1 className='border-2 border-b-black mb-2 text-large'>Contact Details</h1>
+                <h1 className='border-2 border-b-black dark:border-b-white border-r-0 border-l-0 border-t-0 mb-2 text-large'>Contact Details</h1>
                 If you would like to get in touch with me personally you can do so through: <br />
                 Phone : +44 (0)7769004379 <br />
                 Email : moravat763@gmail.com <br />

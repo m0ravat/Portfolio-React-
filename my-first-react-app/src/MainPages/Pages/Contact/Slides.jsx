@@ -22,8 +22,8 @@ export function ContactSlides({ slides }){
         <>
         {slides.map(({ img, form, index }) => (
             <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-500`}>
-              <div className="flex justify-between h-fit border-4 border-gray-950  bg-contain bg-center " style={{ backgroundImage: `url(${img})` }}>
-                <div className="text-standard bg-slate-100 p-2 bg-opacity-90  mx-auto">
+              <div className="flex justify-between h-fit border-4 border-black  bg-contain bg-center dark:border-white " style={{ backgroundImage: `url(${img})` }}>
+                <div className="text-standard text-black bg-slate-100 p-2 bg-opacity-90  mx-auto dark:bg-black dark:text-white">
                     {form}
                 </div>
               </div>
