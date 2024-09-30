@@ -27,7 +27,6 @@ export function ProjectSlides({ slides }) {
 
   return (
     <>
-      <h1 className='text-large font-bold border-b-2 border-black mb-4 dark:border-white text-black dark:text-white '>Main Projects (Click on the image to see more information): </h1>
       {slides.map(({ img, title, desc, link }, index) => (
         <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-600`}>
           
@@ -46,16 +45,19 @@ export function ProjectSlides({ slides }) {
           </div>
         </div>
       ))}
-      <a className="prev cursor-pointer absolute top-1/2 -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80"
-        onClick={() => plusSlides(-1)}
+      <a className="prev cursor-pointer border-4 border-black flex items-center justify-center h-[100%] p-3 absolute top-1/2 left-[-40px] bg-slate-400 text-white font-bold transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80"
+          style={{ transform: 'translateY(-50%)' }} // Center vertically
+          onClick={() => plusSlides(-1)}
       >
-        &#10094;
+          <span className="text-large">&#10094;</span>
       </a>
-      <a className="next cursor-pointer absolute top-1/2 right-0  -mt-[0px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
-        onClick={() => plusSlides(1)}
+      <a className="next cursor-pointer border-4 border-black flex items-center justify-center h-[100%] p-3 absolute top-1/2 right-[-40px] bg-slate-400 text-white font-bold transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
+          style={{ transform: 'translateY(-50%)' }} // Center vertically
+          onClick={() => plusSlides(1)}
       >
-        &#10095;
+          <span className="text-large">&#10095;</span>
       </a>
+
     </>
   );
 }
