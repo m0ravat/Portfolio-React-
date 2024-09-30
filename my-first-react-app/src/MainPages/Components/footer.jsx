@@ -9,8 +9,8 @@ function Footer(){
                         <li className="text-center text-small"><a href="https://github.com/m0ravat" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github fa-3x"></i><br /> Github</a></li>
                         <li className="text-center text-small"><a href="https://www.linkedin.com/in/muhammad-ravat-1429a1258" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin fa-3x"></i><br /> LinkedIn</a></li>
                         <li className="text-center text-small"><a href="mailto:moravat763@gmail.com"><i className="fa-solid fa-inbox fa-3x"></i><br /> Gmail</a></li>
-                        <li className="text-center text-small"><a href="/CV/MuhammadRavat_CV.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file fa-3x"></i><br /> General CV</a></li>
-                        <li className="text-center text-small"><a href="/CV/M_Ravat_TechCV.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-regular fa-file fa-3x"></i><br /> Tech based CV</a></li>
+                        <li className="text-center text-small"><Link to ="/skillsCV" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file fa-3x"></i><br /> General CV</Link></li>
+                        <li className="text-center text-small"><Link to ="/techCV"target="_blank" rel="noopener noreferrer"><i className="fa-regular fa-file fa-3x"></i><br /> Tech based CV</Link></li>
                     </ul>
 
                 </ul>
