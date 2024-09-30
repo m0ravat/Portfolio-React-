@@ -76,7 +76,7 @@ function Contact(){
         <div className="mt-4 flex flex-col min-h-screen" >
             <TopNav />
             <div className="p-8 mt-20">
-                <div className="slideshow-container w-[90%] min-w-72 relative mx-auto">
+                <div className="slideshow-container w-[70%] md:w-[90%] min-w-72 relative mx-auto">
                     <ContactSlides slides = {ContactElements}/>
                 </div>
             </div>

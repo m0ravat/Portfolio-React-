@@ -29,8 +29,18 @@ export function ContactSlides({ slides }){
               </div>
             </div>
         ))}
-        <a className="prev cursor-pointer absolute top-1/2 -mt-[22px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80" onClick={() => plusSlides(-1)}>&#10094;</a>
-        <a className="next cursor-pointer absolute top-1/2 right-0 -mt-[22px] px-[16px] text-white font-bold text-[18px] transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80" onClick={() => plusSlides(1)}>&#10095;</a>
+          <a className="prev cursor-pointer border-4 border-black flex items-center justify-center h-[100%] p-2 absolute top-1/2 left-[-30px] bg-slate-400 text-white font-bold transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80"
+              style={{ transform: 'translateY(-50%)' }} // Center vertically
+              onClick={() => plusSlides(-1)}
+          >
+              <span className="text-large">&#10094;</span>
+          </a>
+          <a className="next cursor-pointer border-4 border-black flex items-center justify-center h-[100%] p-2 absolute top-1/2 right-[-30px] bg-slate-400 text-white font-bold transition duration-600 ease-in-out rounded-l-[3px] select-none hover:bg-black/80"
+              style={{ transform: 'translateY(-50%)' }} // Center vertically
+              onClick={() => plusSlides(1)}
+          >
+              <span className="text-large">&#10095;</span>
+          </a>
         </>
     )
 }
