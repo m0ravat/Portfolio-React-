@@ -46,7 +46,7 @@ function Project(){
             <TopNav />
             <div className="p-8 mt-20">
             <h1 className='text-large font-bold border-b-2 border-black mb-4 dark:border-white text-black dark:text-white '>Main Projects (Click on the image to see more information): </h1>
-                <div className="slideshow-container w-[90%] relative mx-auto">
+                <div className="slideshow-container w-[70%] md:w-[90%] relative mx-auto">
                     <ProjectSlides slides = {highlights} />
                 </div>
             <ProjectsRef websites = {websites} />
