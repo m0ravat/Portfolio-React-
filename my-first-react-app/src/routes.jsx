@@ -1,20 +1,10 @@
-import Contact from "./MainPages/Pages/Contact/contact";
-import Home from "./MainPages/Pages/Home/home";
-import Project from "./MainPages/Pages/Projects/projects";
+import MainPage from './MainPages/Pages/mainPage';
 import techCV from '/CV/Tech.pdf';
 import skillsCV from '/CV/Skills.pdf';
 const routes = [
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "projects",
-    element: <Project />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
+    element: <MainPage />,
   },
   {
     path: "techCV",

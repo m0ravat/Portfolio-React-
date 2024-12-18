@@ -1,5 +1,4 @@
 import TopNav from "../../Components/TopNav/topnav"
-import Footer from "../../Components/footer"
 import { HeroSlides } from './Slides';
 import code from './Media/code.svg'
 import './home.css'
@@ -33,12 +32,11 @@ function Home() {
     ), index: 1 },
   ];
   return (
-    <div className="mt-4 flex flex-col min-h-screen">
+    <div className="mt-4 flex flex-col" id="home">
       <TopNav />
       <div className="mt-20 slideshow-container w-[70%] md:w-[90%] relative mx-auto">
       <HeroSlides slides = {Slides} />
       </div>
-      <Footer />
     </div>
   );
 }

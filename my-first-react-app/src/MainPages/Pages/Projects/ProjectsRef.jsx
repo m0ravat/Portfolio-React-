@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 export function ProjectsRef({websites}){
     return(
-        <div className='flex-row w-[90%] mt-10 mx-auto'>
+        <div className='flex-row w-[90%] mt-6 mx-auto'>
             <h1 className='text-large font-bold text-black dark:text-white'>My Websites: </h1>
             {websites.map(({ title, desc, gitLink, webLink, img, id }, index) => (
                 <div key={index} id={id} className="border-4 border-black dark:border-white dark:bg-black dark:text-white bg-white flex flex-col md:flex-row items-start justify-between text-xl mt-4 p-4">
@@ -37,7 +37,7 @@ ProjectsRef.propTypes = {
 
 export function ProjectsRef2({projects}){
     return(
-        <div className='flex-row w-[90%] mt-10 mx-auto'>
+        <div className='flex-row w-[90%] mt-6 mb-4 mx-auto'>
             <h1 className='text-large font-bold text-black dark:text-white'>My Projects: </h1>
             {projects.map(({ title, desc, gitLink, img, id }, index) => (
                 <div key={index} id={id} className="border-4 border-black dark:border-white dark:bg-black dark:text-white text-black bg-white flex flex-col md:flex-row items-start justify-between text-xl mt-4 p-4">

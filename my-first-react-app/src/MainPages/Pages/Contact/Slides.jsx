@@ -20,15 +20,18 @@ export function ContactSlides({ slides }){
     }
     return(
         <>
-        {slides.map(({ img, form, index }) => (
-            <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade bg-fuchsia-500`}>
-              <div className="flex justify-between h-fit border-4 border-black  bg-contain bg-center dark:border-white " style={{ backgroundImage: `url(${img})` }}>
-                <div className="text-standard text-black bg-slate-100 p-2 bg-opacity-90  mx-auto dark:bg-black dark:text-white">
-                    {form}
-                </div>
-              </div>
-            </div>
-        ))}
+{slides.map(({ img, form, index }) => (
+  <div key={index} className={`mySlides ${slideIndex === index + 1 ? 'block' : 'hidden'} fade`}>
+    <div className="flex justify-center items-center w-full min-h-[500px] p-4 bg-contain bg-center border-4 border-black dark:border-white"
+        style={{ backgroundImage: `url(${img})` }}
+    >
+      <div className="w-full max-w-4xl bg-slate-100 dark:bg-black dark:text-white text-center">
+        {form}
+      </div>
+    </div>
+  </div>
+  ))}
+
           <a className="prev cursor-pointer border-4 border-black flex items-center justify-center h-[100%] p-2 absolute top-1/2 left-[-30px] bg-slate-400 text-white font-bold transition duration-600 ease-in-out rounded-r-[3px] select-none hover:bg-black/80"
               style={{ transform: 'translateY(-50%)' }} // Center vertically
               onClick={() => plusSlides(-1)}

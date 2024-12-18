@@ -1,27 +1,10 @@
-import TopNav from "../../Components/TopNav/topnav"
-import Footer from "../../Components/footer"
 import java from './Media/javaImg.jpeg'
-import notes from './Media/Website_Images/MyNotes.png'
-import port from './Media/Website_Images/Portfolio.png'
 import trio from './Media/Website_Images/mix.png'
-import module from './Media/Project_Images/Module.png'
 import react from  './Media/Website_Images/React.png'
 import api from './Media/Website_Images/API.png'
 import react2 from './Media/Website_Images/reactt.png'
-import { ProjectSlides } from "./Slides"
 import { ProjectsRef, ProjectsRef2 } from "./ProjectsRef"
 function Project(){
-    const highlights = [
-        {img:notes, title:"MyNotesToDo App", desc:"This is my app where you can create projects with tasks and colour coded dates to keep up with which need to be done. The tech stack used was: HTML/CSS/JS, GitHub, Vercel, SquareSpace Domains. You can see the details of it ",
-            link:"#notes", index:0
-        },
-        {img:port, title:"Personal Portfolio", desc:"This is my personal portfolio, which displays all relevant information about me. The tech stack used for this is: React, GitHub, Vercel, SquareSpace Domains. You can see more information by clicking ",
-            link:"#port", index:1
-        },
-        {img:module, title:"Module Enrolment System", desc:"This is my first large scale project in java, allowing a student to enrol on a class of his choosing. This was created using Java via IntelliJ IDE. For more information click ",
-            link:"#module", index:2
-        },
-    ]
     const websites = [
         {title:"Portfolio", desc:"A website designed to showcase my web design and web development skills, while progressively using skills I have learnt through the Odin Project, from vanilla HTML/CSS and JS to using tools like Webpack, Vercel, React and TailwindCSS, it's designed to give potential employers a brief look into my skills as a developer.",
             webLink:"https://www.moravat.me/", gitLink:"https://github.com/m0ravat/webPortfolio", img:react, id:"port"
@@ -42,17 +25,11 @@ function Project(){
         },
     ]
     return(
-        <div className="mt-4 flex flex-col min-h-screen" >
-            <TopNav />
-            <div className="p-8 mt-20">
-            <h1 className='text-large font-bold border-b-2 border-black mb-4 dark:border-white text-black dark:text-white '>Main Projects (Click on the image to see more information): </h1>
-                <div className="slideshow-container w-[70%] md:w-[90%] relative mx-auto">
-                    <ProjectSlides slides = {highlights} />
-                </div>
+        <div className=" flex flex-col" id='projects'>
+            <div>
             <ProjectsRef websites = {websites} />
             <ProjectsRef2 projects = {projects} />
             </div>
-            <Footer />
         </div>
     )
 }

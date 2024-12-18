@@ -15,5 +15,8 @@
 .dark #theme-switch img:last-child {
   display: block;
 }
+li{
+  cursor: pointer;
+}
 
 
